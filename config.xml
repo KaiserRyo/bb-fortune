@@ -14,13 +14,12 @@
 * See the License for the specific language governing permissions and
 * limitations under the License.
 -->
-<widget xmlns:rim="http://www.blackberry.com/ns/widgets" id="bbUISamples" version="0.9.2.0" rim:header="RIM-Widget:rim/widget" xmlns="http://www.w3.org/ns/widgets">
+<widget xmlns:rim="http://www.blackberry.com/ns/widgets" id="bb-fortune" version="1.0" rim:header="RIM-Widget:rim/widget" xmlns="http://www.w3.org/ns/widgets">
   <rim:navigation mode="focus" />
-  <name>Decimal Converter</name>
-  <description>Converts decimal to binary, hex, and octal. </description>
+  <name>Fortune!</name>
+  <description>All the fun of fortune cookies without the cookie.</description>
   <author href="https://adrianblog.net/">Adrian Perez</author>
   <icon src="icon.png" />
-  <!-- <icon src="images/icon.png" rim:hover="true" /> -->
   <content src="index.htm" />
   <feature id="blackberry.identity" />
   <feature id="blackberry.ui.dialog"/>
