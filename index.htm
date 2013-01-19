@@ -1,0 +1,84 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN">
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+        <script src="js/alice.min.js"></script>
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="js/jquery.min.js"></script>
+        <script type="text/javascript" src="js/jquery.fortune.js"></script>
+        <link type="text/css" rel="stylesheet" media="all" href="css/bootstrap.min.css" />
+        <link type="text/css" rel="stylesheet" media="all" href="css/bootstrap-responsive.min.css" />
+        <link type="text/css" rel="stylesheet" media="all" href="css/style.css" />
+        <style type="text/css">   
+      body {
+        padding-top: 20px;
+        padding-bottom: 40px;
+      }
+      
+      /* Custom container */
+      .container-narrow {
+        margin: 0 auto;
+        max-width: 724px;
+      }
+      .container-narrow > hr {
+        margin: 30px 0;
+      }
+      
+      /* Main marketing message and sign up button */
+      .jumbotron {
+        margin: 60px 0;
+        text-align: center;
+      }
+      .jumbotron h1 {
+        font-size: 72px;
+        line-height: 1;
+      }
+      .jumbotron .btn {
+        font-size: 21px;
+        padding: 14px 24px;
+      }
+      
+      /* Supporting marketing content */
+      .marketing {
+        margin: 60px 0;
+      }
+      .marketing p + h4 {
+        margin-top: 28px;
+      }
+      
+      body {
+        background-image: url('bg/5.png'); /* Old random bg code. don't mind me! */
+      }
+    </style>
+    <script type="text/javascript">
+            $(document).ready(function() {
+                $("#contention").fortune({file: "./contentions.json", cookieNode: "contentions", metaNodes: {theIndex: "index", theContent: "content"}, animate: true});
+
+                $('#another').click(function() {
+                    $("#contention").fortune({file: "./contentions.json", cookieNode: "contentions", metaNodes: {theIndex: "index", theContent: "content"}, animate: true});
+                    return false;
+                });
+
+                $('#about').click(function() {
+                    $("#info").slideToggle("fast");
+                    return false;
+                });
+            });
+        </script>
+    </head>
+    <body>
+<div class="hero-unit">
+    <h3>Fortune Cookie!</h3>
+        <div id="contention">
+            <div class="index">&nbsp;</div>
+            <div class="content">&nbsp;</div>
+        </div>
+        <div>
+            <button id="another" class="btn btn-primary" href="" title="show another contention">Another!</button>
+        </div>
+</div>
+<div>
+    <small>Powered by <a href="http://mbadran.github.com/jquery.fortune/" target="_blank">jquery.fortune</a></small>
+</div>
+    </body>
+</html>
