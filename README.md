@@ -5,6 +5,7 @@ So what is this?
 ----------------
 * This is an adaptation of jquery.fortune (http://mbadran.github.com/jquery.fortune/) for BlackBerry 10 WebWorks
 * This uses BlackBerry 10 WebWorks (https://github.com/blackberry/BB10-WebWorks-Framework), Twitter Bootstrap (http://twitter.github.com/bootstrap/), and jQuery (http://jquery.com/)
+* The background used is from Subtle Patterns (http://subtlepatterns.com/) (https://github.com/subtlepatterns/SubtlePatterns)
 
 Okay, now what?
 ---------------
