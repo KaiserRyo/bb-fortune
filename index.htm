@@ -78,15 +78,22 @@
 						evt.initEvent('webworksready', true, true);
 						document.dispatchEvent(evt);
 					}
+	});
+    
     $(document).ready(function() {
         $("#contention").fortune({file: "./contentions.json", cookieNode: "contentions", metaNodes: {theIndex: "index", theContent: "content"}, animate: true});
         $('#another').click(function() {
             $("#contention").fortune({file: "./contentions.json", cookieNode: "contentions", metaNodes: {theIndex: "index", theContent: "content"}, animate: true});
             return false;
-            });
         });
-	});
-		</script>
+    });
+
+    
+    function draw()
+    {
+        $("#contention").fortune({file: "./contentions.json", cookieNode: "contentions", metaNodes: {theIndex: "index", theContent: "content"}, animate: true});
+    }
+	</script>
 	</head>
 	<body>
 	</body>

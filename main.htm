@@ -1,18 +1,24 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN">
-    <script type="text/javascript">
-
-        </script>
+<script type="text/javascript">
+    function draw()
+    {
+        $("#contention").fortune({file: "./contentions.json", cookieNode: "contentions", metaNodes: {theIndex: "index", theContent: "content"}, animate: true});
+    }
+    draw();
+</script>
 
 <div data-bb-type="screen" data-bb-effect="fade">
     <div id="foo" data-bb-type="title" data-bb-caption="Fortune!"></div>
-    <div id="contention" data-bb-type="round-panel"> 
+    <div id="contention" data-bb-type="round-panel">
+    <center>
             <div class="index">&nbsp;</div>
             <div class="content">&nbsp;</div>
+    </center>
     <div>
-        <div id="another" data-bb-type="button" data-bb-style="stretch" onclick="document.getElementById('foo').setActionCaption('foo');">Another!</div>
+        <div id="another" data-bb-type="button" data-bb-style="stretch" onclick="draw();">Another!</div>
     </div>
-</div>
-<!-- Footer! -->
-<div>
-    <small>Powered by <a href="http://mbadran.github.com/jquery.fortune/" target="_blank">jquery.fortune</a></small>
+    <!-- Footer! -->
+    <div data-bb-type="round-panel">
+        <small>Powered by <a href="http://mbadran.github.com/jquery.fortune/" target="_blank">jquery.fortune</a></small>
+    </div>
 </div>
