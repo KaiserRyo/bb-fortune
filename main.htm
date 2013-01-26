@@ -7,11 +7,6 @@
                     $("#contention").fortune({file: "./contentions.json", cookieNode: "contentions", metaNodes: {theIndex: "index", theContent: "content"}, animate: true});
                     return false;
                 });
-
-                $('#about').click(function() {
-                    $("#info").slideToggle("fast");
-                    return false;
-                });
             });
         </script>
 
@@ -23,7 +18,7 @@
             <div class="content">&nbsp;</div>
         </div>
     <div>
-        <button id="another" class="btn btn-primary" href="" title="show another contention">Another!</button>
+        <div id="another" data-bb-type="button" data-bb-style="stretch" onclick="document.getElementById('foo').setActionCaption('foo');">Another!</div>
     </div>
 </div>
 <!-- Footer! -->
