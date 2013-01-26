@@ -1,0 +1,32 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN">
+    <script type="text/javascript">
+            $(document).ready(function() {
+                $("#contention").fortune({file: "./contentions.json", cookieNode: "contentions", metaNodes: {theIndex: "index", theContent: "content"}, animate: true});
+
+                $('#another').click(function() {
+                    $("#contention").fortune({file: "./contentions.json", cookieNode: "contentions", metaNodes: {theIndex: "index", theContent: "content"}, animate: true});
+                    return false;
+                });
+
+                $('#about').click(function() {
+                    $("#info").slideToggle("fast");
+                    return false;
+                });
+            });
+        </script>
+
+<div data-bb-type="screen" data-bb-effect="fade">
+    <div id="foo" data-bb-type="title" data-bb-caption="Fortune!"></div>
+    <div data-bb-type="round-panel"> 
+        <div id="contention">
+            <div class="index">&nbsp;</div>
+            <div class="content">&nbsp;</div>
+        </div>
+    <div>
+        <button id="another" class="btn btn-primary" href="" title="show another contention">Another!</button>
+    </div>
+</div>
+<!-- Footer! -->
+<div>
+    <small>Powered by <a href="http://mbadran.github.com/jquery.fortune/" target="_blank">jquery.fortune</a></small>
+</div>
