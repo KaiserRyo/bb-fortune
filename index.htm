@@ -18,8 +18,11 @@
 <html> 
 	<head>
 		<meta name="x-blackberry-defaultHoverEffect" content="false" />
-		<link  rel="stylesheet" type="text/css" href="bbui.css"><link />
-		<script type="text/javascript" src="bbui.js"></script>
+		<link  rel="stylesheet" type="text/css" href="css/bbui.css"><link />
+		<script type="text/javascript" src="js/bbui.js"></script>
+        <script type="text/javascript" src="js/jquery.min.js"></script>
+		<script type="text/javascript" src="js/jquery.fortune.js"></script>
+
 		<script type="text/javascript" src="local:///chrome/webworks.js"></script>
 		<script type="text/javascript">
 			var webworksreadyFired = false;
@@ -75,7 +78,14 @@
 						evt.initEvent('webworksready', true, true);
 						document.dispatchEvent(evt);
 					}
-				});
+    $(document).ready(function() {
+        $("#contention").fortune({file: "./contentions.json", cookieNode: "contentions", metaNodes: {theIndex: "index", theContent: "content"}, animate: true});
+        $('#another').click(function() {
+            $("#contention").fortune({file: "./contentions.json", cookieNode: "contentions", metaNodes: {theIndex: "index", theContent: "content"}, animate: true});
+            return false;
+            });
+        });
+	});
 		</script>
 	</head>
 	<body>
