@@ -35,7 +35,7 @@
 				// If you want default functionality simply don't pass any parameters.. bb.init();
 				bb.init({actionBarDark: true,
 						controlsDark: true,
-						listsDark: false,
+						listsDark: true,
 						bb10ForPlayBook: true,
 						// Fires "before" styling is applied and "before" the screen is inserted in the DOM
 						onscreenready: function(element, id) {
@@ -93,9 +93,11 @@
     {
         $("#contention").fortune({file: "./contentions.json", cookieNode: "contentions", metaNodes: {theIndex: "index", theContent: "content"}, animate: true});
     }
-    draw();
 	</script>
 	</head>
 	<body>
 	</body>
+    <script>
+        document.addEventListener("webworksready", draw); // Detatched body and head!
+    </script>
 </html>
