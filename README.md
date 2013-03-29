@@ -3,7 +3,7 @@ Fortune! for BlackBerry 10 WebWorks
 
 So what is this?
 ----------------
-* This is an adaptation of [jquery.fortune](http://mbadran.github.com/jquery.fortune/) for BlackBerry 10 WebWorks
+* This is an adaptation of [jquery.fortune](https://github.com/mbadran/jquery.fortune) for BlackBerry 10 WebWorks
 * This uses [BlackBerry 10 WebWorks](https://github.com/blackberry/BB10-WebWorks-Framework), [bbUI.js](https://github.com/blackberry/bbUI.js/), and [jQuery](http://jquery.com/)
 
 Okay, now what?
